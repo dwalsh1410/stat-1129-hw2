@@ -1,0 +1,70 @@
+#Question 1
+n=0
+while n<10:
+  print(n)
+  if n==5:
+    break
+  n=n+1
+
+#Question 2
+n=0
+while n<5:
+  print(n)
+  n=n+1
+else:
+  print(n, "is not less than 5")
+
+#Question 3
+fruits = ["lemon", "lime", "apple"]
+for fruit in fruits:
+  if fruit=="apple":
+    print("is apple really a fruit?")
+  else:
+    print("I like", fruit)
+
+#Question 4
+total=0
+i=1
+while i<=30:
+  total+=i
+  i+=1
+print("the sum of all the numbers up to 30 is", total)
+
+#Question 5
+score=int(input("enter the students score:"))
+score=int(score)
+if score >=90:
+  grade="A"
+elif score >= 80:
+  grade="B"
+elif score >= 70:
+  grade="C"
+elif score>= 60:
+  grade="D"
+else:
+  grade="F"
+print("the students grade is " + grade)
+score=99
+
+#Question 6
+marks = {"Andy":88, "Amy":66, "James": 90, "Jules": 55, "Arthur": 77}
+for name, grade in marks.items():
+  print(name+ ":" +str(grade))
+
+mean_grade=sum(marks.values())/len(marks)
+max_grade=max(marks.values())
+min_grade=min(marks.values())
+
+print("mean grade:", mean_grade)
+print("max grade", max_grade)
+print("min grade", min_grade)
+
+for name in marks:
+  if name[0]=="J":
+    break
+  print(name)
+
+for name in marks:
+  if name[0]=="J":
+    continue
+  print(name)
